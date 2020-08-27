@@ -28,3 +28,16 @@ public class HireMe {
         
     }
 }
+
+/* to remember:
+
+1. could be used also this code (but it looks longer):
+
+        int[] array = new int[count];
+        array[0] = 3;
+        
+        // let's fill our array with numbers from 2 t0 20:
+        for (int i = 0; i < array.length - 1; i ++) {
+            array[i + 1] = array [i] + 2;
+            
+ */
