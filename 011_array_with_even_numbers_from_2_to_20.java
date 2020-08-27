@@ -37,10 +37,16 @@ without -1 it goes out of array limits.
 2. it was possible to use second counter inside of our FOR loop. 
 that means we could fill up array another way:
 
-for (int i = 2, b = 0; i <= 20; i ++) {
+for (int i = 0, j = 2; i < array.length; i ++) {
+            array[i] = i + j;
+            j ++;
+        }
+
+3. decision from the author:
+for (int i = 2, j = 0; i <= 20; i ++) {
             if (i%2 == 0) {
-            array[b] = i;
-            b ++;
+            array[j] = i;
+            j ++;
         }
 }
         
